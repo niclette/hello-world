@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl",>
 	<head>
         	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http;font.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="sylesheet">
 <link rel="stylesheet" href="Filmarhief.css">
         <title>Filmarchief</title>
     </head>
 	<style>
             
         body{
-            background-color:black;
-             color: aliceblue;
+            
+            background-color:;
+             color: ;
             width: 800px;
             margin: auto;
             margin: auto;
         }   
             
         #header {
-            background-color: black;
-            color: white;
+            background-color: ;
+            color: ;
+            text-transform: uppercase;
         }
         
         #content{
@@ -26,74 +29,58 @@
         }   
         #container {
             
-            background-color: black;
-            color:white;
+            background-color: ;
+            color:;
         }
         #nav{
             width: 180px;
             float: left;
         }
         #main{
-            width: 180px;
+            width: 100%;
+            max-width: 400px;
             float: right;
+            
         }
         #footer{
             clear: both;
         }
         
-        div.img {
-    border: 1px solid #ccc;
-}
-
-div.img:hover {
-    border: 1px solid #777;
-}
-
-div.img img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+        .accordion{
+            width: 100%;
+            padding:0;
+            margin: 0;
+            list-style-type: none; 
+        }
+        .accordion-header{
+            display:block;
+            padding: 15px 20px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 0 rgba (0,0,0,.1);
+            margin-bottom: 5px;
+        }
         
-        
-        
-        h3 {
-            background-color: white;
-            color: black;
-        }      
+        .accordion-content p{
+            margin: 0 0 20px 0;
+        }
+      .accordion-content {
+          padding: 0;
+          height: 0;
+          overflow: hidden;
+        }
+        .accordion-content:target{
+            height: auto;
+            padding: 20px;
+            
+        }
+    
+        body {
+            font:1em 'Source Sans Pro, sans-serif';
+        } 
         
         
         
@@ -109,78 +96,259 @@ div.desc {
          <h1>Filmarchief</h1>
         </div>
       
-      </div>
+      
 <div id="content">
    
             
-       
+    <div id="nav" >
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    </div>
+    
+    
+
+  	
+        
+        
+        
     <div id="main">
-    <p>gegevens</p>
-    
-    
-    </div>
     
     
     
     
-    
-<h2>Responsive Image Gallery</h2>
-<h4>Resize the browser window to see the effect.</h4>
+        <div class="container">
+        
+        <ul class="accordion">
+            <li>
+            <a href="#Februari" class="accordion-header">Februari</a>
+            <div class="accordion-content" id="Februari">
+               <p>De toevallige ontmoeting tussen een man en een vrouw, beidengehuwd,maar niet met elkaar, leidt tot de frustratie van de man niet tot een affaire. Hij ontdekt dat haar echtegenooot een baantje heeft in de bank waar hij een toppositie bekleedt...Een ongenadige doorlichting van de financiele wereld in Frankfurt</p>
+                
+                
+                </div>
+             </li>
+            
+           
+            <li>
+    <a href="#Januari" class="accordion-header">Januari</a>
+    <div class="accordion-content" id="Januari">
+               <p>De toevallige ontmoeting tussen een man en een vrouw, beidengehuwd,maar niet met elkaar, leidt tot de frustratie van de man niet tot een affaire. Hij ontdekt dat haar echtegenooot een baantje heeft in de bank waar hij een toppositie bekleedt...Een ongenadige doorlichting van de financiele wereld in Frankfurt</p>
+                
+            </div>
+            </li>
+           
 
-<div class="responsive">
-  <div class="img">
-    <a target="_blank" href="afbeelding.png">
-      <img src="afbeeling1.png" alt="afbeelding" width="269" height="141">
-    </a>
-   <div class="Filmarchief-accordion Filmarchief-light-grey">
-    <button onclick="myFunction('Demo1')" class="Filmarchief-btn-block Filmarchief-left-align">van Chistoph hochhausles, Duitsland 2010</button>
-    <div id="Demo1" class="Filmarchief-accordion-content Filmarchief-container">
-      <h4>The City below<br>Zat 03.12/19:00</h4>
-      <p>De toevallige ontmoeting tussen een man en een vrouw, beidengehuwd,maar niet met elkaar, leidt tot de frustratie van de man niet tot een affaire. Hij ontdekt dat haar echtegenooot een baantje heeft in de bank waar hij een toppositie bekleedt...Een ongenadige doorlichting van de financiele wereld in Frankfurt</p>
-    </div>
-  </div>
+            
+            
+            
+<li>
+            <a href="#December" class="accordion-header">December</a>
+    <div class="accordion-content" id="December">
+               <div> 
+            <p style="color:blue" >Don. 01 Dec.  </p>   
+         <hr>
+                  
+14:30 > 22:00	Cinematek - foyer	Schijn bedriegt, de rechtvaardige oorlog als illusie<span class="Filmarchief-tooltip">In CINEMATEK is van 10.11 tot 18.12 de tentoonstelling 'Schijn bedriegt, de rechtvaardige oorlog als illusie' te zien, die werd samengesteld door Michel Lorand. Via een reeks video-installaties, originele interviews en archiefstukken toont de Belgische kunstenaar de manipulaties van de staat rond een aantal belangrijke historische gebeurtenissen en de
+                   
+                   oorlogspropagandatechnieken die onze wereldleiders inzetten.</span>
+            <hr>
+     15:00	Cinematek ledoux	The Magnificent Ambersons	
+                   <hr>
+    18:00	Cinematek plateau	Belgische avantgarde I	
+                   <hr>
+       19:00	Cinematek ledoux	Manon De Boer: An Experiment in     Leisure (Speciale vertoning)	
+                   <hr>
+    19:30	Flagey	Canto alla Vita	
+                   <hr>
+    20:00	Cinematek plateau	Only Angels Have Wings	
+                   <hr>
+    21:00	Cinematek ledoux	Obsession [Ossessione]	
+                   <hr>
+    21:45	Flagey	Rashomon     
+                   
 </div>
-
-
+     <br>              
+   
+    <div>
+         <p style="color:blue" >Vrij. 02 Dec.  </p> 
+        <hr>
+     14:30 > 22:00	Cinematek - foyer	Schijn bedriegt, de rechtvaardige oorlog als illusie	
+        <hr>
+     17:30	Flagey	Vincere	
+        <hr>
+    18:00	Cinematek plateau	Only Angels Have Wings	
+        <hr>
+     19:00	Bozar	Pictures of the Old World [Obrazy starého sveta]	+
+    19:00	Bozar	La Promesse	
+        <hr>
+    19:00	Cinematek ledoux	The Magnificent Ambersons	
+        <hr>
+     19:45	Flagey	Intégration inch'Allah (St Fr)	
+        <hr>
+     20:15	Cinematek plateau	Air Mail	
+        <hr>
+    21:00	Cinematek ledoux	Le Diable au corps	
+        <hr>
+      21:45	Flagey	La Mort de Louis X   
+        
+ </div>
     
-    
-    
-    
-<div class="responsive">
-  <div class="img">
-    <a target="_blank" href="img_forest.jpg">
-      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-    
-    
-    
-
-<div class="responsive">
-  <div class="img">
-    <a target="_blank" href="img_lights.jpg">
-      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
     <br>
-    
-    
-<div class="responsive">
-  <div class="img">
-    <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
+        <div>
+            <p style="color:blue" >Zat. 03 Dec.  </p> 
+        14:30 > 22:00	Cinematek - foyer	Schijn bedriegt, de rechtvaardige oorlog als illusie	
+            <hr>
+15:30	Flagey	La Mort de Louis XIV	
+            <hr>
+16:00	Bozar	Paper Heads [Papierove hlavy]	
+            <hr>
+17:00	Cinematek ledoux	Christoph Hochhäusler: In Conversation	
+            <hr>
+17:30	Flagey	The Return [Vozvrashcheniye]	
+            <hr>
+18:00	Cinematek plateau	Franse avantgarde I	
+            <hr>
+19:00	Cinematek ledoux	The City Below [Unter dir die Stadt]	<hr>
+19:30	Flagey	Leap Into the Void [Salto nel vuoto]	
+            <hr>
+20:00	Cinematek plateau	Le Cheval d'orgueil	
+            <hr>
+21:00	Cinematek ledoux	Abschied von gestern	
+            <hr>
+21:45	Flagey	Vincere
+        </div>
+    <br>
+        
+    <div>
+        <p style="color:blue" >Zon. 04 Dec.  </p> 
+       11:00	Cinematek ledoux	Black & White	
+        <hr>
+14:30 > 22:00	Cinematek - foyer	Schijn bedriegt, de rechtvaardige oorlog als illusie	
+        <hr>
+15:00	Cinematek ledoux	Englishman Who Went Up a Hill but Came Down a Mountain	
+        <hr>
+15:30	Flagey	La Mort de Louis XIV	
+        <hr>
+17:00	Cinematek ledoux	Phoenix	
+        <hr>
+17:30	Flagey	Rashomon	
+        <hr>
+18:00	Cinematek plateau	Air Mail	
+        <hr>
+19:00	Cinematek ledoux	Sans toit ni loi	
+        <hr>
+19:30	Flagey	The Return [Vozvrashcheniye]	
+        <hr>
+20:00	Cinematek plateau	Belgische avantgarde I	
+        <hr>
+21:00	Cinematek ledoux 
+        
+    </div>
+        <br>
+        
+<div>
+    <p style="color:blue" >Maan. 05 Dec.  </p> 
+    14:30 > 22:00	Cinematek - foyer	Schijn bedriegt, de rechtvaardige oorlog als illusie	
+    <hr>
+18:00	Cinematek plateau	Ball of Fire	
+    <hr>
+19:00	Cinematek ledoux	I pugni in tasca	
+    <hr>
+20:00	Cinematek plateau	A Song Is Born	
+    <hr>
+21:30	Cinematek ledoux
 </div>
+        
+     <br>
+<div>
+ <p style="color:blue" >Din. 06 Dec.  </p>
+ 14:30 > 22:00	Cinematek - foyer	Schijn bedriegt, de rechtvaardige oorlog als illusie	
+    <hr>
+18:00	Cinematek plateau	The Girl Who Stayed at Home	
+    <hr>
+18:30	Flagey	Master class : Marco Bellocchio	
+    <hr>
+19:00	Cinematek ledoux	Citizen Kane	
+    <hr>
+19:45	Flagey	Sangue del mio sangue	
+    <hr>
+20:00	Cinematek plateau	Air Mail	
+    <hr>
+21:15	Cinematek ledoux	That Obscure Object of Desire [Cet obscur objet du désir]	
+    <hr>
+21:45	Flagey	Rashomon
+        
+</div>
+    <br>
+<div>
+<p style="color:blue" >Woe. 07 Dec.  </p>
+        
 
-  
+14:30 > 22:00	Cinematek - foyer	Schijn bedriegt, de rechtvaardige oorlog als illusie	
+    <hr>
+17:30	Flagey	Sangue del mio sangue	
+    <hr>
+18:00	Cinematek plateau	Decision Before Dawn	
+    <hr>
+19:00	Cinematek ledoux	Authorship and Abjection: Lars von Trier's Melancholia	
+    <hr>
+19:30	Flagey	La Langue rouge	
+    <hr>
+20:00	Cinematek plateau	Ich war neunzehn	
+    <hr>
+21:00	Cinematek ledoux	Melancholia	
+    <hr>
+21:30	Flagey	Canto alla Vita
+</div>
+<br>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>                  
+    </li>       
+     </ul>             
+    
+    
+        
+        
+        
+        
+        
+    
+    </div>
+    </div>
+    
+    
+    
+
+    
+
+
+    
+    
+    
+
+    
+    
+
+
       
       
       
@@ -192,38 +360,24 @@ div.desc {
       
       
 
-      <br>
+      
 	
       
-<div id="footer"> 
-	 <hr target="_blank" style="#margin: -px 0 -6px 0;"/>
-      <p>adres</p>
-    <hr target="_blank" style="#margin: -px 0 -6px 0;"/>
-</div>
+<div id="footer"> </div>
 
     
-<script>
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("Filmarchief-show") == -1) {
-        x.className += " Filmarchief-show";
-    } else { 
-        x.className = x.className.replace(" Filmarchief-show", "");
-    }
-}
-</script>  
+
+      
+        </div>
       
       
       
       
       
       
-      
-      
-      
+
       
       
       
       
     </body>
-   
